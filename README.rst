@@ -1,7 +1,6 @@
 =================
 Salt Vagrant Demo
 =================
-Salt Vagrant Demo
 
 A Salt Demo using Vagrant.
 
