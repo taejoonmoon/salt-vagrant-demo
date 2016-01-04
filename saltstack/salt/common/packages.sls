@@ -3,4 +3,6 @@ common_packages:
     - pkgs:
       - htop
       - strace
-      - vim
+#      - vim
+      - tree
+      - mc
