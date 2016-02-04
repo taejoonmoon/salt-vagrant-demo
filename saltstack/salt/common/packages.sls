@@ -1,8 +1,8 @@
 common_packages:
   pkg.installed:
     - pkgs:
-      - htop
-      - strace
-#      - vim
+#      - htop
+#      - strace
+      - vim-enhanced
       - tree
       - mc
