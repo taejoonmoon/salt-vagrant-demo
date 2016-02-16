@@ -1,5 +1,6 @@
-base:
+#base:
 #  '*':
+#    - template
 #    - common
 
 # for general servers
@@ -22,6 +23,13 @@ base:
       - users.dbuser
       - system.sysctl.db
       - mysql
+
+  'nagios-server':
+      - nagios.server
+      - mysql.nagios
+
+  'zabbix-server':
+      - zabbix.server
 
 #  'os:Centos':
 #      - match: grain

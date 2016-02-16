@@ -1,0 +1,16 @@
+test
+
+{% set myname = salt['pillar.get']('template:lookup:master') %}
+{{ myname }}
+
+{% for user in pillar.get('myuser',[]) %}
+{{ loop.index }} : {{ user }}
+{% endfor %}
+
+{% set data = salt['pillar.get']('php_ini') %}
+{% for section_name, name_val_pairs in data.items() %}
+[ {{ section_name }} ]
+{% for name, val in name_val_pairs.items() -%}
+  {{ name }} - {{ val }}
+{% endfor %}
+{% endfor %}
