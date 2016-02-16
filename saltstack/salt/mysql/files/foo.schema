@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS `test`;
+CREATE TABLE `test` (
+  `name` varchar(20) DEFAULT NULL,
+  `old` int(10) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+LOCK TABLES `test` WRITE;
+INSERT INTO `test` VALUES ('aa',5);
+UNLOCK TABLES;
+
