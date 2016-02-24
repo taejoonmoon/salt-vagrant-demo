@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
 # vim: ft=sls
+{% from "lvs/map.jinja" import lvs with context %}
 
-lvs-name:
+lvs-ipvsadm:
   service.running:
-    - name: ipvsadm
+    - name: {{ lvs.service.name }}
     - enable: True
+    - require:
+      - pkg: {{ lvs.pkg }}

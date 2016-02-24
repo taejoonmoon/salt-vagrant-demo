@@ -1,6 +1,9 @@
+# -*- coding: utf-8 -*-
+# vim: ft=sls
+
 include:
   - lvs.install
-  - lvs.config
   - lvs.service
-  - lvs.ifconfig
+  - lvs.config
+#  - lvs.ifconfig
 

@@ -1,0 +1,6 @@
+# -*- coding: utf-8 -*-
+# vim: ft=yaml
+lvs:
+  pkg: ipvsadm
+  service:
+    name: ipvsadm
